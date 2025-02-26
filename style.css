@@ -25,16 +25,12 @@ body {
         justify-content: center;
         padding: 1rem 0;
     }
-
 }
-
 
 .page-logo {
     height: 100px;
     width: auto;
 }
-
-
 
 .bottom-nav {
     position: fixed;
@@ -62,10 +58,13 @@ body {
     padding: 0;
 }
 
-
-
 .nav-item {
     flex-shrink: 0;
+    transition: transform 0.3s ease; /* Added smooth transition */
+}
+
+.nav-item:hover {
+    transform: translateY(-5px); /* Added hover effect */
 }
 
 .nav-link {
@@ -78,7 +77,6 @@ body {
 }
 
 .nav-icon {
-
     width: 50px;
     margin-bottom: 0.25rem;
 }
@@ -89,8 +87,6 @@ body {
     color: black;
     font-weight: bold;
 }
-
-
 
 .nav-list {
     overflow-x: auto;
